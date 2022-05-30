@@ -3,14 +3,12 @@ import path from 'path'
 import { fileURLToPath } from 'url';
 import contentful from 'contentful'
 import nodemailer from 'nodemailer'
-import dotenv from 'dotenv'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename)
 
 
 // Init App
-dotenv.config()
 const app = express();
 const port = process.env.PORT || 3000
  
