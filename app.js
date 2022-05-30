@@ -12,6 +12,7 @@ const __dirname = path.dirname(__filename)
 // Init App
 dotenv.config()
 const app = express();
+const port = process.env.PORT || 3000
  
 
 // Load View Engine
@@ -106,6 +107,6 @@ app.get('/projects/:id', (req, res) => {
 })
 
 //Start Server
-app.listen('3000', () => {
-    console.log('Server started on port 3000');
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
 });
