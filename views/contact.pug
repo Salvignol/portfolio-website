@@ -1,0 +1,40 @@
+extends templates/layout
+
+block main
+  main(data-barba="container" data-barba-namespace="contact")
+
+    .wrapper.no-padding-bottom
+      section.contact-form-section.animate-this.top-padding
+        .contact-form-conatiner
+          .contact-form-container-left-side
+            .text-block-center.animate-this
+              //- p.small-title-text #{smallText1},
+              .big-title-text-container
+                h2.big-title-text Let's talk
+
+              p.standard-text Don't my mind what it is.
+            .contact-form-image-conatiner
+              img(src="/assets/images/call-me-cropped.png")#contact-form-image.animate-this
+
+          .contact-form-container-right-side.animate-this
+            
+              form.contact-form(action="")
+                .input-block#name-block
+                  p.input-block-title What is your Name?
+                  input#name(type="text" placeholder="Jane Doe *") 
+
+                .input-block#email-block 
+                  p.input-block-title What is your Email?
+                  input#email(type="email" placeholder="janedoe@example.com *")
+
+                .input-block#subject-block
+                  p.input-block-title What's the matter?
+                  input#subject(type="text" placeholder="Subject *") 
+
+                .input-block#message-block
+                  p.input-block-title I'm all ears
+                  textarea#message(name="big-text", placeholder="Hello, Al wat up? *", cols="30", rows="10")
+                .input-block
+                  input.submit(type="submit", value="Get in touch")
+
+                

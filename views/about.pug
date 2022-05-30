@@ -1,0 +1,29 @@
+extends templates/layout
+
+block main
+  main(data-barba="container" data-barba-namespace="about")
+    .wrapper
+    
+      section.other-section.animate-this
+        
+        .other-section-left-side.animate-this
+          
+          .text-block-center.animate-this(style="max-width: 650px;")
+            p.small-title-text.about-me A Few Words about me
+            .big-title-text(style="text-align:center;") 
+              .tool-list.medium-title-text  
+                span(name="/assets/images/logos/javascript.svg") Javascript 
+                span(name="/assets/images/logos/react.svg") React   
+                span(name="/assets/images/logos/express.svg") Express 
+                span(name="/assets/images/logos/nodejs.png") Node 
+                span(name="/assets/images/logos/mongodb.svg") MongoDB 
+                span(name="/assets/images/logos/pug.svg") Pug 
+                span(name="/assets/images/logos/sass.svg") Sass   
+            p.standard-text(style="text-align:center;") 
+                  |I am a versative developer, and a passionate designer,
+                  | always on the lookout for the best tools to conceive the most appealing experiences
+                  |for my users.
+
+        .other-section-right-side.animate-this
+          .other-section-image-container
+            img#other-section-image(src="/assets/images/cheers.png")

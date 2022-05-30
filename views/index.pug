@@ -1,0 +1,58 @@
+
+extends templates/layout
+
+block main
+
+  main(data-barba="container" data-barba-namespace="index")
+
+    section.hero-section
+      .hero-section-top
+        .text-block-center.animate-this
+          //- p.small-title-text #{},
+          .big-title-text-container
+            h2.big-title-text I am a web developer
+
+          p.standard-text I'm. So. Pro
+          .link-container
+            p.link-text Take a look at this website repository
+            
+      div.hero-section-bottom
+        img(src="/assets/images/dev-modified.png")#hero-section-image.animate-this
+
+    .wrapper 
+
+      section.project-section
+        .projects.animate-this
+          each project in projects
+            - var thumbnail = "https:" + project.fields.thumbnail.fields.file.url
+            - var projectURL = "/projects/" + project.fields.title
+            .project-container
+              .project-image-container 
+                .smaller-text-block
+                  p.small-title-text Coming Soon
+                  .text-with-logo
+                    p.medium-title-text #{project.fields.title}
+                  p.smaller-standard-text(style="max-width: 20rem;text-align: center") #{project.fields.description}
+                  .link-container
+                    a(href=projectURL).smaller-link-text Learn more
+                img(src=thumbnail) 
+            
+      
+      section.contact-section
+        .contact-section-left-side
+          .text-block-center.animate-this
+            p.small-title-text contact,
+            .big-title-text-container
+              h2.big-title-text Let's Get in touch
+            p.standard-text Give me a call anytime.
+            div.contact-infos
+              a.link-text(href="mailto:alsalvadorg@gmail.com") alsalvadorg@gmail.com
+              a.link-text(href="tel:+15123331571") +1 (512) 333 1571
+
+              
+        .contact-section-bottom
+          .bottom-image-container
+            img(src="/assets/images/sharp-iphone-10.png" )#hero-section-image.animate-this
+
+  
+        

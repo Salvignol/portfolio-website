@@ -1,0 +1,40 @@
+
+.work-section{
+    visibility: visible;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100%;
+    column-gap: 3rem;
+}
+
+.work-section-top{
+    border: 3px dotted firebrick;
+}
+
+#project-background-image{
+    z-index: -1;
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1359px) {
+    
+    
+}
+
+@media screen and (max-width: 767px) {
+
+
+    
+    
+}
+

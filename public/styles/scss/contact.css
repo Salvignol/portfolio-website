@@ -1,0 +1,128 @@
+.contact-form-conatiner{
+    margin-top: 2rem;
+    /* border: 5px dotted navy; */
+    width: 100%;
+    display: flex;
+    column-gap: 4rem;
+    
+}
+
+.contact-form-container-left-side{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 4rem;
+}
+
+.contact-form-container-right-side{
+    /* border: 5px dotted orange; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.contact-form{
+    /* border: 5px dotted forestgreen; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:  1rem 0;
+    row-gap: .5rem;
+    border-bottom: gainsboro 1px solid;
+    width: 100%;
+}
+
+input{
+    border: none;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 1rem 0;
+    width: 100%;
+}
+input:focus, textarea:focus{ 
+    outline: none; 
+}
+
+input[type=submit]{
+    background-color: #0066CC;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input[type=submit]:hover{
+    opacity: 0.6;
+
+}
+
+textarea{
+    border: none;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 1rem 0;
+    width: 100%;
+    height: 7rem;
+}
+
+.contact-form-image-conatiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 949px) {
+    .contact-form-container-left-side{
+        width: 100%;
+        row-gap: 4rem;
+    }
+
+
+    .contact-form-conatiner{
+        margin-top: 0rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction:  column;
+        
+        
+    }
+
+    #contact-form-image{
+        border: 5px coral dotted;
+        display: none;
+    }
+    
+    .contact-form-container-right-side{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    
+    
+}

@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='/styles/scss/style.css')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    include ../includes/scripts
+    title Document
+  body.index-body(data-barba='wrapper')
+
+    .load-container
+      .loading-screen
+        p.loading-screen-text
+
+    .cursor
+      .cursor-media
+
+    .big-bro#luxy
+
+      block navigation
+        include ../includes/navigation
+
+      block main
+        main(data-barba="container" data-barba-namespace="index")
+          p Barba container  
+
+      block footer 
+        include ../includes/footer
+
+    
+
+    
+          

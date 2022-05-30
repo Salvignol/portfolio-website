@@ -1,0 +1,17 @@
+extends templates/layout
+
+block main
+  main(data-barba="container" data-barba-namespace="about")
+      - var backgroundImage = featuredImage.fields.file.url
+      section.work-section
+        img#project-background-image(src=backgroundImage)
+        .text-block-center(style="max-width: 650px").animate-this
+          p.small-title-text Coming Soon
+          .big-title-text-container
+            h2.big-title-text #{title}
+          p.smaller-standard-text(style="text-align: center") #{content}
+          .link-container
+            //- p.link-text Take a look at this website repository
+
+  
+        
