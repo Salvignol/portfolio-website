@@ -24,8 +24,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json())
 
 var client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  space: process.env.CONTENTFUL_SPACE_ID || 'ux41rvoprusk',
+  accessToken: process.env.CONTENTFUL_ACCESS_KEY || 'VddIdSZEQ9srbInhr13IuDEogNApQBzQHw5TmZlCz7k',
 });
 
 const projectEntries = await client.getEntries({ content_type: 'project'})

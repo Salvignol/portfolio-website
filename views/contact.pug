@@ -1,14 +1,13 @@
 extends templates/layout
 
 block main
-  main(data-barba="container" data-barba-namespace="contact")
+  main.safari-contact-main(data-barba="container" data-barba-namespace="contact")
 
-    .wrapper.no-padding-bottom
+    .wrapper.safari-contact-wrapper.no-padding-bottom
       section.contact-form-section.animate-this.top-padding
         .contact-form-conatiner
           .contact-form-container-left-side
             .text-block-center.animate-this
-              //- p.small-title-text #{smallText1},
               .big-title-text-container
                 h2.big-title-text Let's talk
 
@@ -34,7 +33,7 @@ block main
                 .input-block#message-block
                   p.input-block-title I'm all ears
                   textarea#message(name="big-text", placeholder="Hello, Al wat up? *", cols="30", rows="10")
-                .input-block
+                .input-block.no-border-bottom
                   input.submit(type="submit", value="Get in touch")
 
                 

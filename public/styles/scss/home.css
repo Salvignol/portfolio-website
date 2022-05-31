@@ -23,7 +23,6 @@
     justify-content: flex-start;
     align-items: center;
     background: #FBFBFD;
-    /* border: 5px dotted green; */
     width: 50%;
     position: relative;
     height: 580px;
@@ -66,7 +65,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 3px dotted rebeccapurple; */
     width: 100%;
 }
 
@@ -96,14 +94,12 @@
     
 
     .project-container{
-        /* border: 5px dotted green; */
         aspect-ratio: 1 /1 ;
         width: 100%;
         min-width: 300px;
     }
 
     .project-image-container{
-        /* border: 5px dotted chocolate; */
         aspect-ratio: 1 /1 ;
         height: 100%;
         width: 100%;
@@ -126,7 +122,6 @@
     
     }
     .projects{
-        /* border: 5px darkorchid dotted; */
         flex-direction: column;
     
     }
