@@ -27,7 +27,6 @@ block main
             - var thumbnail = "https:" + project.fields.thumbnail.fields.file.url
             - var projectURL = "/projects/" + project.fields.title
             .project-container
-              .project-image-container 
                 .smaller-text-block
                   p.small-title-text Coming Soon
                   .text-with-logo
@@ -35,7 +34,7 @@ block main
                   p.smaller-standard-text(style="max-width: 20rem;text-align: center") #{project.fields.description}
                   .link-container
                     a(href=projectURL).smaller-link-text Learn more
-                img(src=thumbnail) 
+                img(src=thumbnail width="300px") 
             
       
       section.contact-section
