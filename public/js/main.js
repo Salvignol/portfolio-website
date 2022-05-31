@@ -3,7 +3,11 @@ import getContactForm from './contactForm.js'
 
 // ========/ Luxy Smooth Scrolling /==========
 
-luxy.init();
+if (window.screen.width > 1359) {
+  luxy.init();
+}
+
+
 
 function delay(n){
   n = n || 2000;

@@ -124,6 +124,11 @@
     .hero-section{
         height: fit-content;
     }
+
+    #hero-section-image{
+        border: 5px dotted teal;
+        width: 300px;
+    }
     
     .bottom-image-container{
         width: 20rem;
